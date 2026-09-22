@@ -214,6 +214,17 @@ class SimulationEngine:
 
         for ev in tick_events:
             self._emit(ev)
+            
+        # Battery drain model
+        for agent in self.agents.values():
+            st = agent.state
+            s = str(st.status)
+            if "MOVING" in s:
+                st.battery = max(0.0, st.battery - 0.05)
+            elif "WAITING" in s or "REROUTING" in s:
+                st.battery = max(0.0, st.battery - 0.01)
+            elif "IDLE" in s:
+                st.battery = max(0.0, st.battery - 0.002)
 
         # Check completion
         all_complete = (

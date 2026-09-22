@@ -1,0 +1,14 @@
+std_msgs/Header header
+string robot_id
+int32 row
+int32 col
+float32 velocity
+string direction
+float32 battery
+string status
+string current_task_id
+int32 waiting_ticks
+int32 completed_tasks
+int32 reroute_count
+int32 conflict_count
+float32 distance_travelled

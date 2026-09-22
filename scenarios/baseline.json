@@ -1,0 +1,15 @@
+{
+  "scenario_name": "baseline",
+  "description": "Basic uniform task distribution across the warehouse.",
+  "tasks": [
+    {"pickup": "P1", "delivery": "D1"},
+    {"pickup": "P2", "delivery": "D2"},
+    {"pickup": "P3", "delivery": "D3"},
+    {"pickup": "P4", "delivery": "D4"},
+    {"pickup": "P4", "delivery": "D1"},
+    {"pickup": "P3", "delivery": "D2"},
+    {"pickup": "P2", "delivery": "D3"},
+    {"pickup": "P1", "delivery": "D4"}
+  ],
+  "obstacles": []
+}

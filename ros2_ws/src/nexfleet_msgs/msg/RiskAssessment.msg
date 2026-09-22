@@ -1,0 +1,7 @@
+std_msgs/Header header
+string robot_id
+string target_robot_id
+float32 collision_risk
+string risk_level
+string recommendation
+float32 time_to_collision

@@ -1,0 +1,11 @@
+{
+  "scenario_name": "blocked_aisle",
+  "description": "A dynamic obstacle fully blocks a main thoroughfare.",
+  "tasks": [
+    {"pickup": "P2", "delivery": "D2"},
+    {"pickup": "P3", "delivery": "D3"}
+  ],
+  "obstacles": [
+    [12, 12], [12, 13], [12, 14], [12, 15]
+  ]
+}

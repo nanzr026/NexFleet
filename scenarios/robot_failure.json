@@ -1,0 +1,10 @@
+{
+  "scenario_name": "robot_failure",
+  "description": "Simulates a robot failure requiring dynamic task reassignment and rerouting around the failed unit.",
+  "tasks": [
+    {"pickup": "P1", "delivery": "D4"},
+    {"pickup": "P2", "delivery": "D3"},
+    {"pickup": "P3", "delivery": "D2"}
+  ],
+  "obstacles": []
+}

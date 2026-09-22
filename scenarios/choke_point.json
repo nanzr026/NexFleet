@@ -1,0 +1,15 @@
+{
+  "scenario_name": "choke_point",
+  "description": "Tasks designed to force agents through the narrow center aisles.",
+  "tasks": [
+    {"pickup": "P2", "delivery": "D2"},
+    {"pickup": "P3", "delivery": "D3"},
+    {"pickup": "P2", "delivery": "D3"},
+    {"pickup": "P3", "delivery": "D2"},
+    {"pickup": "P2", "delivery": "D2"},
+    {"pickup": "P3", "delivery": "D3"}
+  ],
+  "obstacles": [
+    [10, 2], [10, 3], [10, 4], [10, 25], [10, 26], [10, 27]
+  ]
+}
