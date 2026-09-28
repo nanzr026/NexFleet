@@ -1,0 +1,23 @@
+#VRML_SIM R2025a utf8
+
+PROTO WarehouseBox [
+  field SFVec3f translation 0 0 0
+  field SFRotation rotation 0 0 1 0
+  field SFString name "component"
+] {
+Solid {
+ translation IS translation rotation IS rotation name IS name
+ children [
+ Pose { translation 0 0 .3 children [ Shape { appearance PBRAppearance { baseColor .66 .48 .29 roughness 0.65 metalness 0 } geometry Box { size .54 .62 .60 } } ] }
+Pose { translation 0 0 .602 children [ Shape { appearance PBRAppearance { baseColor .79 .65 .43 roughness 0.65 metalness 0 } geometry Box { size .075 .625 .005 } } ] }
+Pose { translation 0 -.313 .3 children [ Shape { appearance PBRAppearance { baseColor .79 .65 .43 roughness 0.65 metalness 0 } geometry Box { size .075 .005 .60 } } ] }
+Pose { translation .15 -.317 .4 children [ Shape { appearance PBRAppearance { baseColor .94 .94 .88 roughness 0.65 metalness 0 } geometry Box { size .15 .005 .11 } } ] }
+Pose { translation 0.09 -.321 .405 children [ Shape { appearance PBRAppearance { baseColor .12 .14 .16 roughness 0.65 metalness 0 } geometry Box { size .006 .002 .060 } } ] }
+Pose { translation 0.106 -.321 .405 children [ Shape { appearance PBRAppearance { baseColor .12 .14 .16 roughness 0.65 metalness 0 } geometry Box { size .006 .002 .060 } } ] }
+Pose { translation 0.122 -.321 .405 children [ Shape { appearance PBRAppearance { baseColor .12 .14 .16 roughness 0.65 metalness 0 } geometry Box { size .006 .002 .060 } } ] }
+Pose { translation 0.138 -.321 .405 children [ Shape { appearance PBRAppearance { baseColor .12 .14 .16 roughness 0.65 metalness 0 } geometry Box { size .006 .002 .060 } } ] }
+Pose { translation 0.154 -.321 .405 children [ Shape { appearance PBRAppearance { baseColor .12 .14 .16 roughness 0.65 metalness 0 } geometry Box { size .006 .002 .060 } } ] }
+Pose { translation 0.16999999999999998 -.321 .405 children [ Shape { appearance PBRAppearance { baseColor .12 .14 .16 roughness 0.65 metalness 0 } geometry Box { size .006 .002 .060 } } ] }
+Pose { translation 0.186 -.321 .405 children [ Shape { appearance PBRAppearance { baseColor .12 .14 .16 roughness 0.65 metalness 0 } geometry Box { size .006 .002 .060 } } ] }
+] boundingObject Pose { translation 0 0 .3 children [ Box { size .54 .62 .6 } ] } }
+}

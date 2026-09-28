@@ -1,0 +1,31 @@
+{
+  "before": {
+    "x": 13.89999916986839,
+    "y": -10.600000000003835
+  },
+  "after": {
+    "x": 13.075201903812935,
+    "y": -10.607353128502352
+  },
+  "task_seen": true,
+  "final_intent": {
+    "odometry_fresh": true,
+    "motion_hold": null,
+    "robot_id": "amr_01",
+    "current_position": [
+      13.097,
+      -10.625
+    ],
+    "goal": null,
+    "next_waypoint": null,
+    "planned_path": [],
+    "task_id": null,
+    "state": "IDLE",
+    "obstacle_detected": false,
+    "safety_action": "PROCEED",
+    "safety_yield_active": false
+  },
+  "forward_commands": 34,
+  "rotation_commands": 74,
+  "elapsed_wall": 9.743554908998703
+}

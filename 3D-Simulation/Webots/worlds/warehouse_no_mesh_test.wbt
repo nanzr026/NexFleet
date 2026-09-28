@@ -1,0 +1,63 @@
+#VRML_SIM R2025a utf8
+
+WorldInfo {
+  basicTimeStep 32
+  gravity 9.81
+}
+
+Viewpoint {
+  orientation 1 0 0 1.15
+  position 0 -35 28
+}
+
+Background {
+  skyColor [
+    0.75 0.80 0.85
+  ]
+}
+
+DirectionalLight {
+  direction 0 0 -1
+  intensity 1
+  castShadows FALSE
+}
+
+Solid {
+  translation 0 0 -0.11
+  name "ground"
+  locked TRUE
+
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.35 0.35 0.35
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 60 60 0.02
+      }
+    }
+  ]
+
+  boundingObject Box {
+    size 60 60 0.02
+  }
+}
+
+Solid {
+  translation 0 0 0.5
+  name "WAREHOUSE_TEST_MARKER"
+  locked TRUE
+
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0.2 0.2
+      }
+      geometry Box {
+        size 2 2 1
+      }
+    }
+  ]
+}

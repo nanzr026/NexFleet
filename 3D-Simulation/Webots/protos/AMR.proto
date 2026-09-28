@@ -1,0 +1,100 @@
+#VRML_SIM R2025a utf8
+
+PROTO AMR [
+  field SFVec3f translation 0 0 0
+  field SFRotation rotation 0 0 1 0
+  field SFString name "component"
+  field SFColor color .08 .38 .65
+  field SFString controller "amr_motion_test"
+  field MFString controllerArgs []
+
+] {
+Robot {
+ translation IS translation rotation IS rotation name IS name
+ controller IS controller controllerArgs IS controllerArgs
+ children [
+  Pose { translation 0 0 .26 children [
+   Shape { appearance PBRAppearance { baseColor IS color metalness .35 roughness .38 } geometry Box { size .9 .64 .24 } }
+  ] }
+ Pose { translation 0 0 .407 children [ Shape { appearance PBRAppearance { baseColor .10 .13 .16 roughness 0.65 metalness 0.6 } geometry Box { size .76 .58 .055 } } ] }
+Pose { translation .453 0 .23 children [ Shape { appearance PBRAppearance { baseColor .035 .04 .05 roughness 0.65 metalness 0 } geometry Box { size .025 .62 .10 } } ] }
+Pose { translation .471 0 .29 children [ Shape { appearance PBRAppearance { baseColor .4 .9 .8 roughness 0.65 metalness 0 } geometry Box { size .012 .36 .028 } } ] }
+HingeJoint {
+ jointParameters HingeJointParameters { axis 0 1 0 anchor 0 0.38 .14 dampingConstant .01 }
+ device [
+  RotationalMotor { name "left_wheel_motor" maxVelocity 12 maxTorque 25 }
+  PositionSensor { name "left_wheel_sensor" }
+ ]
+ endPoint Solid {
+  translation 0 0.38 .14 rotation 1 0 0 1.57079632679
+  name "left_wheel" contactMaterial "tire"
+  children [
+   Shape { appearance PBRAppearance { baseColor .045 .055 .065 roughness .95 } geometry Cylinder { radius .14 height .09 subdivision 24 } }
+   Pose { translation 0 0 .048 children [
+    Shape { appearance PBRAppearance { baseColor .60 .64 .68 metalness .8 roughness .3 } geometry Cylinder { radius .075 height .008 subdivision 16 } }
+   ] }
+  ]
+  boundingObject Cylinder { radius .14 height .09 subdivision 24 }
+  physics Physics { density -1 mass 1.8 }
+ }
+}
+HingeJoint {
+ jointParameters HingeJointParameters { axis 0 1 0 anchor 0 -0.38 .14 dampingConstant .01 }
+ device [
+  RotationalMotor { name "right_wheel_motor" maxVelocity 12 maxTorque 25 }
+  PositionSensor { name "right_wheel_sensor" }
+ ]
+ endPoint Solid {
+  translation 0 -0.38 .14 rotation 1 0 0 1.57079632679
+  name "right_wheel" contactMaterial "tire"
+  children [
+   Shape { appearance PBRAppearance { baseColor .045 .055 .065 roughness .95 } geometry Cylinder { radius .14 height .09 subdivision 24 } }
+   Pose { translation 0 0 .048 children [
+    Shape { appearance PBRAppearance { baseColor .60 .64 .68 metalness .8 roughness .3 } geometry Cylinder { radius .075 height .008 subdivision 16 } }
+   ] }
+  ]
+  boundingObject Cylinder { radius .14 height .09 subdivision 24 }
+  physics Physics { density -1 mass 1.8 }
+ }
+}
+Pose {
+ translation -0.32 0 .065
+ children [
+  Shape {
+   appearance PBRAppearance {
+    baseColor .16 .18 .20
+    roughness .7
+   }
+   geometry Sphere {
+    radius .065
+    subdivision 2
+   }
+  }
+ ]
+}
+Pose {
+ translation 0.32 0 .065
+ children [
+  Shape {
+   appearance PBRAppearance {
+    baseColor .16 .18 .20
+    roughness .7
+   }
+   geometry Sphere {
+    radius .065
+    subdivision 2
+   }
+  }
+ ]
+}
+  Pose { translation .12 0 .52 children [
+    Shape { appearance PBRAppearance { baseColor .08 .12 .14 roughness .4 } geometry Cylinder { radius .075 height .11 subdivision 24 } }
+  ] }
+  Lidar { translation .12 0 .59 name "lidar" horizontalResolution 360 fieldOfView 6.28318530718 verticalFieldOfView .05 numberOfLayers 1 minRange .12 maxRange 12 near .05 }
+  GPS { name "gps" }
+  InertialUnit { name "imu" }
+ ]
+ boundingObject Pose { translation 0 0 .26 children [ Box { size .9 .64 .24 } ] }
+ physics Physics { density -1 mass 35 centerOfMass [ 0 0 .23 ] }
+}
+}

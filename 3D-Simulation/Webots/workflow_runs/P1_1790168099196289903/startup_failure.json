@@ -1,0 +1,4 @@
+{
+  "status": "STARTUP_FAILED",
+  "reason": "Duplicate PRODUCT_01 DEF in generated test fixture; no physics or task assignment observed"
+}

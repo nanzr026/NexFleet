@@ -1,0 +1,81 @@
+#VRML_SIM R2025a utf8
+EXTERNPROTO "Pallet.proto"
+EXTERNPROTO "WarehouseBox.proto"
+PROTO WarehouseRack [
+  field SFVec3f translation 0 0 0
+  field SFRotation rotation 0 0 1 0
+  field SFString name "component"
+] {
+Solid { translation IS translation rotation IS rotation name IS name children [
+Pose { translation -3 -0.85 1.9 children [ Shape { appearance PBRAppearance { baseColor .12 .25 .34 roughness 0.65 metalness 0.65 } geometry Box { size .095 .095 3.8 } } ] }
+Pose { translation -3 -0.85 .16 children [ Shape { appearance PBRAppearance { baseColor .98 .59 .08 roughness 0.65 metalness 0 } geometry Box { size .16 .16 .32 } } ] }
+Pose { translation -3 0.85 1.9 children [ Shape { appearance PBRAppearance { baseColor .12 .25 .34 roughness 0.65 metalness 0.65 } geometry Box { size .095 .095 3.8 } } ] }
+Pose { translation -3 0.85 .16 children [ Shape { appearance PBRAppearance { baseColor .98 .59 .08 roughness 0.65 metalness 0 } geometry Box { size .16 .16 .32 } } ] }
+Pose { translation -1 -0.85 1.9 children [ Shape { appearance PBRAppearance { baseColor .12 .25 .34 roughness 0.65 metalness 0.65 } geometry Box { size .095 .095 3.8 } } ] }
+Pose { translation -1 -0.85 .16 children [ Shape { appearance PBRAppearance { baseColor .98 .59 .08 roughness 0.65 metalness 0 } geometry Box { size .16 .16 .32 } } ] }
+Pose { translation -1 0.85 1.9 children [ Shape { appearance PBRAppearance { baseColor .12 .25 .34 roughness 0.65 metalness 0.65 } geometry Box { size .095 .095 3.8 } } ] }
+Pose { translation -1 0.85 .16 children [ Shape { appearance PBRAppearance { baseColor .98 .59 .08 roughness 0.65 metalness 0 } geometry Box { size .16 .16 .32 } } ] }
+Pose { translation 1 -0.85 1.9 children [ Shape { appearance PBRAppearance { baseColor .12 .25 .34 roughness 0.65 metalness 0.65 } geometry Box { size .095 .095 3.8 } } ] }
+Pose { translation 1 -0.85 .16 children [ Shape { appearance PBRAppearance { baseColor .98 .59 .08 roughness 0.65 metalness 0 } geometry Box { size .16 .16 .32 } } ] }
+Pose { translation 1 0.85 1.9 children [ Shape { appearance PBRAppearance { baseColor .12 .25 .34 roughness 0.65 metalness 0.65 } geometry Box { size .095 .095 3.8 } } ] }
+Pose { translation 1 0.85 .16 children [ Shape { appearance PBRAppearance { baseColor .98 .59 .08 roughness 0.65 metalness 0 } geometry Box { size .16 .16 .32 } } ] }
+Pose { translation 3 -0.85 1.9 children [ Shape { appearance PBRAppearance { baseColor .12 .25 .34 roughness 0.65 metalness 0.65 } geometry Box { size .095 .095 3.8 } } ] }
+Pose { translation 3 -0.85 .16 children [ Shape { appearance PBRAppearance { baseColor .98 .59 .08 roughness 0.65 metalness 0 } geometry Box { size .16 .16 .32 } } ] }
+Pose { translation 3 0.85 1.9 children [ Shape { appearance PBRAppearance { baseColor .12 .25 .34 roughness 0.65 metalness 0.65 } geometry Box { size .095 .095 3.8 } } ] }
+Pose { translation 3 0.85 .16 children [ Shape { appearance PBRAppearance { baseColor .98 .59 .08 roughness 0.65 metalness 0 } geometry Box { size .16 .16 .32 } } ] }
+Pose { translation 0 -0.85 0.3 children [ Shape { appearance PBRAppearance { baseColor .90 .28 .065 roughness 0.65 metalness 0.3 } geometry Box { size 6.1 .10 .16 } } ] }
+Pose { translation 0 0.85 0.3 children [ Shape { appearance PBRAppearance { baseColor .90 .28 .065 roughness 0.65 metalness 0.3 } geometry Box { size 6.1 .10 .16 } } ] }
+Pose { translation 0 0 0.35 children [ Shape { appearance PBRAppearance { baseColor .35 .39 .4 roughness 0.65 metalness 0.65 } geometry Box { size 6.0 1.65 .045 } } ] }
+Pallet { translation -2 0 0.373 name "storage pallet -2 0.3" }
+WarehouseBox { translation -2.3 0 0.523 name "carton -2.3 0.3" }
+WarehouseBox { translation -1.7 0 0.523 name "carton -1.7 0.3" }
+Pallet { translation 0 0 0.373 name "storage pallet 0 0.3" }
+WarehouseBox { translation -0.3 0 0.523 name "carton -0.3 0.3" }
+WarehouseBox { translation 0.3 0 0.523 name "carton 0.3 0.3" }
+Pallet { translation 2 0 0.373 name "storage pallet 2 0.3" }
+WarehouseBox { translation 1.7 0 0.523 name "carton 1.7 0.3" }
+WarehouseBox { translation 2.3 0 0.523 name "carton 2.3 0.3" }
+Pose { translation 0 -0.85 1.55 children [ Shape { appearance PBRAppearance { baseColor .90 .28 .065 roughness 0.65 metalness 0.3 } geometry Box { size 6.1 .10 .16 } } ] }
+Pose { translation 0 0.85 1.55 children [ Shape { appearance PBRAppearance { baseColor .90 .28 .065 roughness 0.65 metalness 0.3 } geometry Box { size 6.1 .10 .16 } } ] }
+Pose { translation 0 0 1.6 children [ Shape { appearance PBRAppearance { baseColor .35 .39 .4 roughness 0.65 metalness 0.65 } geometry Box { size 6.0 1.65 .045 } } ] }
+Pallet { translation -2 0 1.623 name "storage pallet -2 1.55" }
+WarehouseBox { translation -2.3 0 1.7730000000000001 name "carton -2.3 1.55" }
+WarehouseBox { translation -1.7 0 1.7730000000000001 name "carton -1.7 1.55" }
+Pallet { translation 0 0 1.623 name "storage pallet 0 1.55" }
+WarehouseBox { translation -0.3 0 1.7730000000000001 name "carton -0.3 1.55" }
+WarehouseBox { translation 0.3 0 1.7730000000000001 name "carton 0.3 1.55" }
+Pallet { translation 2 0 1.623 name "storage pallet 2 1.55" }
+WarehouseBox { translation 1.7 0 1.7730000000000001 name "carton 1.7 1.55" }
+WarehouseBox { translation 2.3 0 1.7730000000000001 name "carton 2.3 1.55" }
+Pose { translation 0 -0.85 2.8 children [ Shape { appearance PBRAppearance { baseColor .90 .28 .065 roughness 0.65 metalness 0.3 } geometry Box { size 6.1 .10 .16 } } ] }
+Pose { translation 0 0.85 2.8 children [ Shape { appearance PBRAppearance { baseColor .90 .28 .065 roughness 0.65 metalness 0.3 } geometry Box { size 6.1 .10 .16 } } ] }
+Pose { translation 0 0 2.8499999999999996 children [ Shape { appearance PBRAppearance { baseColor .35 .39 .4 roughness 0.65 metalness 0.65 } geometry Box { size 6.0 1.65 .045 } } ] }
+Pallet { translation -2 0 2.8729999999999998 name "storage pallet -2 2.8" }
+WarehouseBox { translation -2.3 0 3.0229999999999997 name "carton -2.3 2.8" }
+WarehouseBox { translation -1.7 0 3.0229999999999997 name "carton -1.7 2.8" }
+Pallet { translation 0 0 2.8729999999999998 name "storage pallet 0 2.8" }
+WarehouseBox { translation -0.3 0 3.0229999999999997 name "carton -0.3 2.8" }
+WarehouseBox { translation 0.3 0 3.0229999999999997 name "carton 0.3 2.8" }
+Pallet { translation 2 0 2.8729999999999998 name "storage pallet 2 2.8" }
+WarehouseBox { translation 1.7 0 3.0229999999999997 name "carton 1.7 2.8" }
+WarehouseBox { translation 2.3 0 3.0229999999999997 name "carton 2.3 2.8" }
+] boundingObject Group { children [
+Pose { translation -3 -0.85 1.9 children [ Box { size .095 .095 3.8 } ] }
+Pose { translation -3 0.85 1.9 children [ Box { size .095 .095 3.8 } ] }
+Pose { translation -1 -0.85 1.9 children [ Box { size .095 .095 3.8 } ] }
+Pose { translation -1 0.85 1.9 children [ Box { size .095 .095 3.8 } ] }
+Pose { translation 1 -0.85 1.9 children [ Box { size .095 .095 3.8 } ] }
+Pose { translation 1 0.85 1.9 children [ Box { size .095 .095 3.8 } ] }
+Pose { translation 3 -0.85 1.9 children [ Box { size .095 .095 3.8 } ] }
+Pose { translation 3 0.85 1.9 children [ Box { size .095 .095 3.8 } ] }
+Pose { translation 0 -0.85 0.3 children [ Box { size 6.1 .10 .16 } ] }
+Pose { translation 0 0.85 0.3 children [ Box { size 6.1 .10 .16 } ] }
+Pose { translation 0 0 0.35 children [ Box { size 6.0 1.65 .045 } ] }
+Pose { translation 0 -0.85 1.55 children [ Box { size 6.1 .10 .16 } ] }
+Pose { translation 0 0.85 1.55 children [ Box { size 6.1 .10 .16 } ] }
+Pose { translation 0 0 1.6 children [ Box { size 6.0 1.65 .045 } ] }
+Pose { translation 0 -0.85 2.8 children [ Box { size 6.1 .10 .16 } ] }
+Pose { translation 0 0.85 2.8 children [ Box { size 6.1 .10 .16 } ] }
+Pose { translation 0 0 2.8499999999999996 children [ Box { size 6.0 1.65 .045 } ] }
+] } }
+}

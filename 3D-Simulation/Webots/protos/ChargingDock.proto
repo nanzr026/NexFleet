@@ -1,0 +1,16 @@
+#VRML_SIM R2025a utf8
+
+PROTO ChargingDock [
+  field SFVec3f translation 0 0 0
+  field SFRotation rotation 0 0 1 0
+  field SFString name "component"
+] {
+Solid { translation IS translation rotation IS rotation name IS name children [
+Pose { translation 0 0 .025 children [ Shape { appearance PBRAppearance { baseColor .13 .18 .22 roughness 0.65 metalness 0.4 } geometry Box { size 1.4 1.6 .05 } } ] }
+Pose { translation .45 0 .5 children [ Shape { appearance PBRAppearance { baseColor .20 .26 .30 roughness 0.65 metalness 0.5 } geometry Box { size .38 1.2 1.0 } } ] }
+Pose { translation .248 0 .52 children [ Shape { appearance PBRAppearance { baseColor .035 .05 .06 roughness 0.65 metalness 0 } geometry Box { size .035 .66 .24 } } ] }
+Pose { translation .225 -.22 .48 children [ Shape { appearance PBRAppearance { baseColor .78 .67 .31 roughness 0.65 metalness 0.8 } geometry Box { size .035 .09 .15 } } ] }
+Pose { translation .225 .22 .48 children [ Shape { appearance PBRAppearance { baseColor .78 .67 .31 roughness 0.65 metalness 0.8 } geometry Box { size .035 .09 .15 } } ] }
+Pose { translation .24 0 .86 children [ Shape { appearance PBRAppearance { baseColor .18 .88 .55 roughness 0.65 metalness 0 } geometry Box { size .025 .42 .06 } } ] }
+] boundingObject Pose { translation .45 0 .5 children [ Box { size .38 1.2 1.0 } ] } }
+}

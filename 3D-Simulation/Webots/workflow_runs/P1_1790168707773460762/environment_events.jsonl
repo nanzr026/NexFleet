@@ -1,0 +1,5 @@
+{"event": "PICKUP_STARTED", "time": 12.32, "product_id": "PRODUCT_01", "carrier": "amr_01", "task_id": "P1_1790168707773460762"}
+{"event": "ATTACHMENT_VERIFIED", "time": 14.32, "product_id": "PRODUCT_01", "carrier": "amr_01", "task_id": "P1_1790168707773460762"}
+{"event": "PICKUP_REJECTED", "time": 14.336, "product_id": "PRODUCT_01", "carrier": "amr_01", "task_id": "P1_1790168707773460762", "reason": "PRODUCT_UNAVAILABLE", "requester": "amr_01"}
+{"event": "DROP_STARTED", "time": 34.176, "product_id": "PRODUCT_01", "carrier": "amr_01", "task_id": "P1_1790168707773460762"}
+{"event": "DETACHMENT_VERIFIED", "time": 36.176, "product_id": "PRODUCT_01", "carrier": null, "task_id": "P1_1790168707773460762"}

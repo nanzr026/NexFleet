@@ -1,0 +1,69 @@
+{
+  "test": "P1",
+  "status": "FAIL",
+  "run": "P1_1790168099196289903",
+  "error": "failed to initialize wait set: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/wait.c:130",
+  "physics": [],
+  "events": [],
+  "states": {
+    "amr_01": {
+      "robot_id": "amr_01",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "state": "IDLE",
+      "bootstrap_ready": true,
+      "current_task": null,
+      "goal": [
+        null,
+        null
+      ],
+      "obstacle": false,
+      "reroutes": 0,
+      "distance": 0.0,
+      "attachment": null,
+      "carry_verified": false,
+      "localization": "webots_gps_imu"
+    },
+    "amr_02": {
+      "robot_id": "amr_02",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "state": "IDLE",
+      "bootstrap_ready": true,
+      "current_task": null,
+      "goal": [
+        null,
+        null
+      ],
+      "obstacle": false,
+      "reroutes": 0,
+      "distance": 0.0,
+      "attachment": null,
+      "carry_verified": false,
+      "localization": "webots_gps_imu"
+    },
+    "amr_03": {
+      "robot_id": "amr_03",
+      "x": 0.0,
+      "y": 0.0,
+      "yaw": 0.0,
+      "state": "IDLE",
+      "bootstrap_ready": true,
+      "current_task": null,
+      "goal": [
+        null,
+        null
+      ],
+      "obstacle": false,
+      "reroutes": 0,
+      "distance": 0.0,
+      "attachment": null,
+      "carry_verified": false,
+      "localization": "webots_gps_imu"
+    }
+  },
+  "results": {},
+  "paths": {}
+}

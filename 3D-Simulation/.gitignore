@@ -1,0 +1,58 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pkl
+.pytest_cache/
+.venv/
+.venv-edge/
+
+# =========================
+# Node / React
+# =========================
+node_modules/
+Dashboard/node_modules/
+
+# =========================
+# ROS 2 generated folders
+# =========================
+ROS 2/build/
+ROS 2/install/
+ROS 2/log/
+
+# =========================
+# Runtime / Logs
+# =========================
+*.log
+demo_logs/
+Webots/logs/
+Webots/edge_ai_runs/
+
+# =========================
+# Webots temporary/project files
+# =========================
+*.wbproj
+*.wbproj.bak
+*.wbproj.backup
+
+# =========================
+# Gazebo runtime/cache
+# =========================
+.gz/
+
+# =========================
+# IDE / OS
+# =========================
+.vscode/
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.swp
+*~
+core
+core.*

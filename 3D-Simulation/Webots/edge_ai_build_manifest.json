@@ -1,0 +1,20 @@
+{
+  "accepted_runtime_hash_checks": {
+    "ROS 2/src/bel_amr_ros/bel_amr_ros/coordination_search.py": true,
+    "ROS 2/src/bel_amr_ros/bel_amr_ros/webots_coordination.py": true,
+    "ROS 2/src/bel_amr_ros/bel_amr_ros/webots_nodes.py": true,
+    "Webots/controllers/amr_ros/amr_ros.py": true,
+    "Webots/controllers/coordination_observer/coordination_observer.py": true
+  },
+  "current_source_sha256": {
+    "ROS 2/src/bel_amr_ros/bel_amr_ros/graph_learning.py": "fd386967ec04efd3fb2cc2aedf2eb40a6edf69dfd0aa2703b1fe3cdfb5c1b997",
+    "ROS 2/src/bel_amr_ros/bel_amr_ros/graph_agent.py": "5c3e25ae7efc4ba8e2acc54786352491a73b6f75ad5eae82100d83c2563e3950",
+    "ROS 2/src/bel_amr_ros/bel_amr_ros/fleet_graph.py": "492d0e5f26ec64978bf7ed92514a30f50f619524cd803acfb5c99ad5289e4cb7",
+    "ROS 2/src/bel_amr_ros/bel_amr_ros/graph_experience.py": "775105a9643b012b2a46c49f82a115599d37306dc3874c1d25c2009535bfa369",
+    "ROS 2/src/bel_amr_ros/bel_amr_ros/graph_peer.py": "5501e8b36e2b23ad8769533cf1bb2867ef21dec880fc17bd45567ddaf7d3c8c3"
+  },
+  "preserved_coordination_artifact_sha256": {
+    "Webots/coordination_metrics.json": "19f854548cd02628d2a53e9d3aab0183a19d069fe31f8111052ce6c162cb6547",
+    "Webots/COORDINATION_VALIDATION.md": "f039648f351a6c38aaefdb1f420bdcc82f1824cab5b60d215aa774eb2b99a9ed"
+  }
+}

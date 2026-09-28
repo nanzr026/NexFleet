@@ -1,0 +1,995 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "../protos/WarehouseRack.proto"
+EXTERNPROTO "../protos/ChargingDock.proto"
+EXTERNPROTO "../protos/AMR.proto"
+EXTERNPROTO "../protos/Pallet.proto"
+EXTERNPROTO "../protos/WarehouseBox.proto"
+
+WorldInfo {
+  title "BEL | Smart Warehouse — Webots R2025a"
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      material1 "tire"
+      material2 "floor"
+      coulombFriction [
+        1.2
+      ]
+      bounce 0
+      softERP 0.8
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material1 "caster"
+      material2 "floor"
+      coulombFriction [
+        0.005
+      ]
+      bounce 0
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 0.00011630669683839271 0.00011630702574101859 84.487822092052
+}
+Background {
+  skyColor [
+    0.13 0.18 0.23
+  ]
+}
+DirectionalLight {
+  ambientIntensity 0.45
+  direction -0.4 0.3 -1
+  intensity 1.8
+}
+Solid {
+  translation 0 0 -0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.31 0.35 0.38
+        roughness 0.86
+      }
+      geometry Box {
+        size 40 32 0.2
+      }
+    }
+  ]
+  name "WAREHOUSE_FLOOR"
+  contactMaterial "floor"
+  boundingObject Box {
+    size 40 32 0.2
+  }
+}
+Solid {
+  translation 0 16 0.65
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.65 0.7 0.72
+        roughness 0.86
+      }
+      geometry Box {
+        size 40 0.2 1.3
+      }
+    }
+  ]
+  name "NORTH_WALL"
+  contactMaterial "floor"
+  boundingObject Box {
+    size 40 0.2 1.3
+  }
+}
+Solid {
+  translation 0 -16 0.65
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.65 0.7 0.72
+        roughness 0.86
+      }
+      geometry Box {
+        size 40 0.2 1.3
+      }
+    }
+  ]
+  name "SOUTH_WALL"
+  contactMaterial "floor"
+  boundingObject Box {
+    size 40 0.2 1.3
+  }
+}
+Solid {
+  translation -20 0 0.65
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.65 0.7 0.72
+        roughness 0.86
+      }
+      geometry Box {
+        size 0.2 32 1.3
+      }
+    }
+  ]
+  name "WEST_WALL"
+  contactMaterial "floor"
+  boundingObject Box {
+    size 0.2 32 1.3
+  }
+}
+Solid {
+  translation 20 0 0.65
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.65 0.7 0.72
+        roughness 0.86
+      }
+      geometry Box {
+        size 0.2 32 1.3
+      }
+    }
+  ]
+  name "EAST_WALL"
+  contactMaterial "floor"
+  boundingObject Box {
+    size 0.2 32 1.3
+  }
+}
+Pose {
+  translation -16 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.015 31.7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -12 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.015 31.7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -8 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.015 31.7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -4 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.015 31.7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 0 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.015 31.7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 4 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.015 31.7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 8 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.015 31.7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 12 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.015 31.7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 16 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.015 31.7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 0 -12 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 39.7 0.015 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 0 -8 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 39.7 0.015 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 0 -4 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 39.7 0.015 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 0 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 39.7 0.015 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 0 4 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 39.7 0.015 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 0 8 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 39.7 0.015 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 0 12 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.25 0.29 0.32
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 39.7 0.015 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -1.5 0 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.92 0.7 0.18
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 34 0.08 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -1.5 3 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.92 0.7 0.18
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 34 0.08 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -17 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -14 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -11 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -8 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -5 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -2 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 1 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 4 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 7 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 10 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 13 1.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.76 0.78 0.7
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 1.2 0.05 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -17 -10 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.78 0.55 0.12
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -9 -10 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.78 0.55 0.12
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 7 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -13 -13.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.78 0.55 0.12
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 8 0.08 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation -13 -6.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.78 0.55 0.12
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 8 0.08 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 6.5 12 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.13 0.65 0.52
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 5 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 13.5 12 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.13 0.65 0.52
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 5 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 10 9.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.13 0.65 0.52
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 7 0.08 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 10 14.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.13 0.65 0.52
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 7 0.08 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 14.5 -6 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.15 0.57 0.76
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 13 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 18.5 -6 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.15 0.57 0.76
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 0.08 13 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 16.5 -12.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.15 0.57 0.76
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 4 0.08 0.006
+      }
+    }
+  ]
+}
+Pose {
+  translation 16.5 0.5 0.006
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.15 0.57 0.76
+        roughness 0.65
+        metalness 0
+      }
+      geometry Box {
+        size 4 0.08 0.006
+      }
+    }
+  ]
+}
+WarehouseRack {
+  translation -10 7 0
+  name "RACK_A"
+}
+WarehouseRack {
+  translation 0 7 0
+  name "RACK_B"
+}
+WarehouseRack {
+  translation 10 7 0
+  name "RACK_C"
+}
+WarehouseRack {
+  translation -10 -3 0
+  name "RACK_D"
+}
+WarehouseRack {
+  translation 0 -3 0
+  name "RACK_E"
+}
+WarehouseRack {
+  translation 10 -3 0
+  name "RACK_F"
+}
+ChargingDock {
+  translation 17.4 -10 0
+  name "CHARGING_STATION_01"
+}
+ChargingDock {
+  translation 17.4 -6 0
+  name "CHARGING_STATION_02"
+}
+ChargingDock {
+  translation 17.4 -2 0
+  name "CHARGING_STATION_03"
+}
+DEF PRODUCT_01 Pallet {
+  translation -12 -11 0
+  name "PRODUCT_01"
+}
+WarehouseBox {
+  translation -12.3 -11 0.15
+  name "PRODUCT_01_carton_-0.3"
+}
+WarehouseBox {
+  translation -11.7 -11 0.15
+  name "PRODUCT_01_carton_0.3"
+}
+DEF STORED_PALLET_02 Pallet {
+  translation -15 -11 0
+  name "STORED_PALLET_02"
+}
+WarehouseBox {
+  translation -15.3 -11 0.15
+  name "STORED_PALLET_02_carton_-0.3"
+}
+WarehouseBox {
+  translation -14.7 -11 0.15
+  name "STORED_PALLET_02_carton_0.3"
+}
+DEF STORED_PALLET_03 Pallet {
+  translation -15 -8.5 0
+  name "STORED_PALLET_03"
+}
+WarehouseBox {
+  translation -15.3 -8.5 0.15
+  name "STORED_PALLET_03_carton_-0.3"
+}
+WarehouseBox {
+  translation -14.7 -8.5 0.15
+  name "STORED_PALLET_03_carton_0.3"
+}
+Solid {
+  translation -18 2 0.55
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.68 0.25 0.12
+        roughness 0.86
+      }
+      geometry Box {
+        size 1.2 2 1.1
+      }
+    }
+  ]
+  name "SAFETY_CABINET"
+  contactMaterial "floor"
+  boundingObject Box {
+    size 1.2 2 1.1
+  }
+}
+Pose {
+  translation -13 -14.5 0.012
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../assets/labels/pickup.png"
+          ]
+        }
+        roughness 1
+      }
+      geometry Plane {
+        size 7 0.85
+      }
+    }
+  ]
+}
+Pose {
+  translation 10 14.3 0.012
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../assets/labels/receiving.png"
+          ]
+        }
+        roughness 1
+      }
+      geometry Plane {
+        size 6 0.7
+      }
+    }
+  ]
+}
+Pose {
+  translation 16 -13.6 0.012
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../assets/labels/charge.png"
+          ]
+        }
+        roughness 1
+      }
+      geometry Plane {
+        size 4 0.5
+      }
+    }
+  ]
+}
+Pose {
+  translation 0 1.5 0.012
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../assets/labels/aisle.png"
+          ]
+        }
+        roughness 1
+      }
+      geometry Plane {
+        size 7 0.7
+      }
+    }
+  ]
+}
+Pose {
+  translation -9 14 0.012
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../assets/labels/title.png"
+          ]
+        }
+        roughness 1
+      }
+      geometry Plane {
+        size 10 1.1
+      }
+    }
+  ]
+}
+DEF AMR01 AMR {
+  hidden position_0_0 54.71095187006034
+  hidden position_0_1 54.71095187006351
+  hidden linearVelocity_0 4.891038384321485e-18 6.288503992557373e-17 -5.636305194085753e-16
+  hidden angularVelocity_0 -2.572605552380784e-16 2.052838140031391e-17 2.4751348048993917e-17
+  hidden rotation_1 -0.47495242629177425 0.6222620801412172 -0.6222620801381697 4.028411693249408
+  hidden linearVelocity_1 6.224906608530694e-18 6.194988792139074e-17 1.2591602310559936e-16
+  hidden angularVelocity_1 1.4161290199507427e-15 2.2594710389161167e-17 9.686495905096331e-17
+  hidden rotation_2 -0.474952426292983 0.6222620801407558 -0.6222620801377088 4.02841169325138
+  hidden linearVelocity_2 -2.458952883409014e-19 -1.163977385039692e-16 -7.576059649050157e-16
+  hidden angularVelocity_2 2.832258039900357e-15 2.071611088596179e-17 9.687289359351759e-17
+  translation 8.139916106822648 -10.000000000001593 -0.0001567174783683456
+  rotation 1.9345154321612535e-17 -7.127207799018819e-14 1 -3.1415926535891407
+  name "AMR01"
+  color 0.08 0.42 0.72
+  controller "amr_ros"
+}
+DEF AMR02 AMR {
+  hidden position_0_0 2.0651930137843594e-13
+  hidden position_0_1 -6.683063062669487e-14
+  hidden linearVelocity_0 -6.826671310681104e-17 4.28734880243844e-15 -1.2809784532013074e-16
+  hidden angularVelocity_0 1.2440309238173893e-15 -3.031342649103312e-16 -8.52316177191069e-18
+  hidden linearVelocity_1 -4.323691689000367e-17 -2.0879910645284734e-15 5.04845514586778e-16
+  hidden angularVelocity_1 -2.832258039896371e-15 -3.026016934884154e-16 -8.520984770990055e-18
+  hidden linearVelocity_2 -4.1085945060772996e-17 -2.296997779370858e-15 -3.784621528329224e-16
+  hidden angularVelocity_2 3.722634611737955e-27 -3.030122033319992e-16 -8.529714945433991e-18
+  translation 15.8 -5.999999999999979 -0.0001567174783683456
+  rotation -6.651630598365563e-17 2.702336237744205e-13 1 3.1415926535897905
+  name "AMR02"
+  color 0.12 0.65 0.46
+  controller "amr_ros"
+}
+DEF AMR03 AMR {
+  hidden position_0_0 7.13714420103887e-14
+  hidden position_0_1 -3.453342583673084e-13
+  hidden linearVelocity_0 2.4368695238572473e-17 1.7359893085720312e-15 -2.561956906402615e-16
+  hidden angularVelocity_0 -2.6654476574804344e-16 1.067470165725068e-16 -3.079205696545497e-17
+  hidden linearVelocity_1 1.1085425421544517e-17 7.65466015650813e-16 -2.528309176091457e-16
+  hidden angularVelocity_1 -2.8322580398943245e-15 1.0734653489095003e-16 -3.067142559199738e-17
+  hidden linearVelocity_2 1.9036265930656327e-17 -2.1869907294563864e-15 5.257813434550212e-19
+  hidden angularVelocity_2 -1.4161290199474376e-15 1.0926399684948212e-16 -3.0673971235560666e-17
+  translation 15.8 -1.9999999999999651 -0.0001567174783683456
+  rotation -1.0971467705082315e-16 2.7018629934044414e-13 1 3.141592653589791
+  name "AMR03"
+  color 0.91 0.36 0.12
+  controller "amr_ros"
+}
+DEF VALIDATOR Robot {
+  name "validation_supervisor"
+  controller "ros_observer"
+  supervisor TRUE
+}

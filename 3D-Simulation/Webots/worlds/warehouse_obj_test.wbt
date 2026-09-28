@@ -1,0 +1,70 @@
+#VRML_SIM R2025a utf8
+
+WorldInfo {
+  basicTimeStep 32
+  gravity 9.81
+}
+
+Viewpoint {
+  orientation 1 0 0 -1.570796
+  position 0 0 70
+}
+
+Background {
+  skyColor [
+    0.75 0.80 0.85
+  ]
+}
+
+DirectionalLight {
+  direction -0.3 0.3 -1
+  intensity 1
+  castShadows FALSE
+}
+
+Solid {
+  translation 0 0 -0.09
+  rotation 1 0 0 1.570796
+  name "WAREHOUSE_OBJ"
+  locked TRUE
+
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.72 0.72 0.72
+        roughness 0.8
+        metalness 0
+      }
+
+      geometry Mesh {
+        url [
+          "../assets/warehouse/warehouse.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 0 0 -0.11
+  name "ground"
+  locked TRUE
+
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.30 0.30 0.30
+        roughness 1
+        metalness 0
+      }
+
+      geometry Box {
+        size 70 70 0.02
+      }
+    }
+  ]
+
+  boundingObject Box {
+    size 70 70 0.02
+  }
+}

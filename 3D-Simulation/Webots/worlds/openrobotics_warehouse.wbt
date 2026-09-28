@@ -1,0 +1,737 @@
+#VRML_SIM R2025a utf8
+
+WorldInfo {
+  basicTimeStep 32
+  gravity 9.81
+}
+
+Viewpoint {
+  orientation 1 0 0 -1.570796
+  position 0 0 70
+}
+
+Background {
+  skyColor [
+    0.75 0.80 0.85
+  ]
+}
+
+DirectionalLight {
+  direction -0.3 0.3 -1
+  intensity 1
+  castShadows FALSE
+}
+
+# ================================================================
+# BEL AMR FLEET - WEBOTS WAREHOUSE DIGITAL-TWIN TESTBED
+# Migrated from the existing Gazebo warehouse.
+# ================================================================
+
+# Ground
+Solid {
+  translation 0 0 -0.11
+  name "ground"
+  locked TRUE
+
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.28 0.30 0.32
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 70 70 0.02
+      }
+    }
+  ]
+
+  boundingObject Box {
+    size 70 70 0.02
+  }
+}
+
+
+Solid {
+  translation 0 0 -0.09
+  rotation 1 0 0 1.570796
+  name "WAREHOUSE"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.72 0.72 0.72
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/warehouse/warehouse.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 14.7 -10.6 -0.04
+  rotation 1 0 0 1.570796
+  name "CS01"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.18 0.30 0.45
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/charging_station/charging_station.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 14.7 -8.0 -0.04
+  rotation 1 0 0 1.570796
+  name "CS02"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.18 0.30 0.45
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/charging_station/charging_station.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 14.7 -5.4 -0.04
+  rotation 1 0 0 1.570796
+  name "CS03"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.18 0.30 0.45
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/charging_station/charging_station.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 14.7 -2.8 -0.04
+  rotation 1 0 0 1.570796
+  name "CS04"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.18 0.30 0.45
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/charging_station/charging_station.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 14.7 -0.2 -0.04
+  rotation 1 0 0 1.570796
+  name "CS05"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.18 0.30 0.45
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/charging_station/charging_station.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation -9.34177 -13.5598 0
+  rotation 1 0 0 1.570796
+  name "shelf_big_0"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf_big/shelf_big.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation -4.41528 -0.690987 0
+  rotation 1 0 0 1.570796
+  name "shelf"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation -4.41528 2.30697 0
+  rotation 1 0 0 1.570796
+  name "shelf_0"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation -4.41528 5.30708 0
+  rotation 1 0 0 1.570796
+  name "shelf_1"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation -4.41528 8.34352 0
+  rotation 1 0 0 1.570796
+  name "shelf_2"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 5.60144 8.34352 0
+  rotation 1 0 0 1.570796
+  name "shelf_3"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 5.60144 5.30708 0
+  rotation 1 0 0 1.570796
+  name "shelf_4"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 5.60144 -0.690987 0
+  rotation 1 0 0 1.570796
+  name "shelf_5"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 5.60144 2.30697 0
+  rotation 1 0 0 1.570796
+  name "shelf_6"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 13.9821 15.319 0
+  rotation 1 0 0 1.570796
+  name "shelf_big_1"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf_big/shelf_big.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 6.19777 -12.9647 0
+  rotation 1 0 0 1.570796
+  name "shelf_big_2"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf_big/shelf_big.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 0.594376 -12.9647 0
+  rotation 1 0 0 1.570796
+  name "shelf_big_3"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf_big/shelf_big.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation -5.36284 -12.9647 0
+  rotation 1 0 0 1.570796
+  name "shelf_big_4"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf_big/shelf_big.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 13.3818 -21.2416 0
+  rotation 1 0 0 1.570796
+  name "shelf_7"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 13.3818 -19.0028 0
+  rotation 1 0 0 1.570796
+  name "shelf_8"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 13.3818 -16.4478 0
+  rotation 1 0 0 1.570796
+  name "shelf_9"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 13.3818 -14.1028 0
+  rotation 1 0 0 1.570796
+  name "shelf_10"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.50 0.42 0.28
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/shelf/shelf.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 4.4161 14.6952 0.17
+  rotation 1 0 0 1.570796
+  name "PRODUCT_01_PALLET"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.48 0.28 0.12
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/pallet_box/pallet.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 4.4161 14.6952 0.17
+  rotation 1 0 0 1.570796
+  name "PRODUCT_01_BOXES"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.70 0.48 0.22
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/pallet_box/boxes.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 4.45415 13.6212 0.01
+  rotation 1 0 0 1.570796
+  name "pallet_box_mobile_0"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.48 0.28 0.12
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/pallet_box/pallet.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 4.4468 12.229 0.01
+  rotation 1 0 0 1.570796
+  name "pallet_box_mobile_1"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.48 0.28 0.12
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/pallet_box/pallet.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation -6.11913 13.7079 0.01
+  rotation 1 0 0 1.570796
+  name "pallet_box_static"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.48 0.28 0.12
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/pallet_box/pallet.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 14.0222 -24.335 0.01
+  rotation 1 0 0 1.570796
+  name "pallet_box_0"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.48 0.28 0.12
+        roughness 0.75
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "../assets/pallet_box/pallet.obj"
+        ]
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 13.9 -10.6 0.2
+  name "AMR01_PLACEHOLDER"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.10 0.45 0.85
+        roughness 0.5
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.6 0.30
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 13.9 -8.0 0.2
+  name "AMR02_PLACEHOLDER"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.10 0.75 0.30
+        roughness 0.5
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.6 0.30
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 13.9 -5.4 0.2
+  name "AMR03_PLACEHOLDER"
+  locked TRUE
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.85 0.25 0.20
+        roughness 0.5
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.6 0.30
+      }
+    }
+  ]
+}
+
+Solid {
+  translation 8 18.5 0.01
+  name "RECEIVING_POINT"
+  locked TRUE
+
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.15 0.75 0.20
+        transparency 0.25
+        roughness 0.8
+      }
+
+      geometry Cylinder {
+        radius 0.8
+        height 0.02
+      }
+    }
+  ]
+}

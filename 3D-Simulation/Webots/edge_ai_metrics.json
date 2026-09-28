@@ -1,0 +1,1016 @@
+{
+  "run": "graph_1790144140293694551",
+  "physical_status": "PASS",
+  "coordinated_goals": 3,
+  "advised_task_completed": true,
+  "contacts": 0,
+  "minimum_separation_m": 1.864835922474483,
+  "winner": "amr_01",
+  "deterministic_counterfactual_winner": "amr_01",
+  "bids": {
+    "amr_02": {
+      "task_id": "graph_1790144140293694551_ADVISED",
+      "robot_id": "amr_02",
+      "bid": 0.7386,
+      "battery": 58.76,
+      "available": true,
+      "x": 2.0,
+      "y": -8.138,
+      "timestamp": 1790144727.6971602
+    },
+    "amr_03": {
+      "task_id": "graph_1790144140293694551_ADVISED",
+      "robot_id": "amr_03",
+      "bid": 0.6362,
+      "battery": 33.76,
+      "available": true,
+      "x": 0.001,
+      "y": -10.136,
+      "timestamp": 1790144727.8053696
+    },
+    "amr_01": {
+      "task_id": "graph_1790144140293694551_ADVISED",
+      "robot_id": "amr_01",
+      "bid": 0.8854,
+      "battery": 83.76,
+      "available": true,
+      "x": 3.865,
+      "y": -10.0,
+      "timestamp": 1790144727.8378856
+    }
+  },
+  "bid_audits": {
+    "amr_02": {
+      "robot_id": "amr_02",
+      "task_id": "graph_1790144140293694551_ADVISED",
+      "deterministic": 0.7429061838171738,
+      "final": 0.7386174043200272,
+      "advice": {
+        "run": "graph_1790144140293694551",
+        "robot_id": "amr_02",
+        "task_id": "graph_1790144140293694551_ADVISED",
+        "time": 143983.263497994,
+        "schema": "fleet_xy_velocity_goal_v1",
+        "version": 4,
+        "model_digest": "65f52cd2ba589ada8c045744abbabe73deaff8aa1366cd87b446d0118af74085",
+        "graph_digest": "423b0b9b6d5fc5536d28fa51b1b7a04bf79c381dd17c942ed0d9bdafe0e0668a",
+        "suitability": 0.84283646941185,
+        "risk": 0.6343139410018921
+      }
+    },
+    "amr_03": {
+      "robot_id": "amr_03",
+      "task_id": "graph_1790144140293694551_ADVISED",
+      "deterministic": 0.6262926294206378,
+      "final": 0.6361900238989588,
+      "advice": {
+        "run": "graph_1790144140293694551",
+        "robot_id": "amr_03",
+        "task_id": "graph_1790144140293694551_ADVISED",
+        "time": 143983.259905561,
+        "schema": "fleet_xy_velocity_goal_v1",
+        "version": 4,
+        "model_digest": "65f52cd2ba589ada8c045744abbabe73deaff8aa1366cd87b446d0118af74085",
+        "graph_digest": "50f5cd8f09576d52eeec00084c09a0fde80fa50b56783353b573703bae08592f",
+        "suitability": 0.8695465624332428,
+        "risk": 0.39332661032676697
+      }
+    },
+    "amr_01": {
+      "robot_id": "amr_01",
+      "task_id": "graph_1790144140293694551_ADVISED",
+      "deterministic": 0.8729137422818514,
+      "final": 0.8853588738221498,
+      "advice": {
+        "run": "graph_1790144140293694551",
+        "robot_id": "amr_01",
+        "task_id": "graph_1790144140293694551_ADVISED",
+        "time": 143983.25893511,
+        "schema": "fleet_xy_velocity_goal_v1",
+        "version": 4,
+        "model_digest": "65f52cd2ba589ada8c045744abbabe73deaff8aa1366cd87b446d0118af74085",
+        "graph_digest": "5321f4905a629d172d47915c934abf1d47210ea97695a33ffbfe95de8d3d95a2",
+        "suitability": 0.8954280987381935,
+        "risk": 0.3837823271751404
+      }
+    }
+  },
+  "independent_decisions": {
+    "amr_03": {
+      "robot_id": "amr_03",
+      "task_id": "graph_1790144140293694551_ADVISED",
+      "winner": "amr_01"
+    },
+    "amr_01": {
+      "robot_id": "amr_01",
+      "task_id": "graph_1790144140293694551_ADVISED",
+      "winner": "amr_01"
+    },
+    "amr_02": {
+      "robot_id": "amr_02",
+      "task_id": "graph_1790144140293694551_ADVISED",
+      "winner": "amr_01"
+    }
+  },
+  "parameters": 614,
+  "training_sources": {
+    "sources": {
+      "A": {
+        "path": "/home/yazhini/BEL_AMR_Fleet/Webots/logs/accepted/A/coordination_A_result.json",
+        "sha256": "e51f7df913ca54386cf0aae2227da51ff582c7d189a419fb0168e9a4cb46c752"
+      },
+      "B": {
+        "path": "/home/yazhini/BEL_AMR_Fleet/Webots/logs/accepted/B/coordination_B_result.json",
+        "sha256": "4b893f148ee08b1ae903033919fde093f045ac5aec18a83c46c6812bc5fcdd52"
+      },
+      "C": {
+        "path": "/home/yazhini/BEL_AMR_Fleet/Webots/logs/accepted/C/coordination_C_result.json",
+        "sha256": "076edba5781dd44c605f5b9ec0fcebf4295fc14694b47304e20774fe664d499b"
+      }
+    },
+    "counts": {
+      "amr_01": 259,
+      "amr_02": 259,
+      "amr_03": 55
+    },
+    "label": "remaining time / 180; measured near-peer exposure under 2.2m over next 10s"
+  },
+  "local_training": {
+    "amr_01": [
+      {
+        "version": 1,
+        "parent": "8b11ecffba635c11b261989a34801c74289c776da270cf96a72350f5a1033bb5",
+        "samples": 259,
+        "before": 0.12125107645988464,
+        "after": 0.0510590523481369
+      },
+      {
+        "version": 2,
+        "parent": "ae17ce6192cda1c8667d95edee177fcb3aee6774d7a08384be5d4cb1807c877c",
+        "samples": 259,
+        "before": 0.06995486468076706,
+        "after": 0.03143395110964775
+      },
+      {
+        "version": 3,
+        "parent": "77d26d6ee8082d393058e858aa22fc1391546735cf0004aed7f9707f515cb037",
+        "samples": 259,
+        "before": 0.039010219275951385,
+        "after": 0.028194166719913483
+      },
+      {
+        "version": 4,
+        "parent": "aa8a1b648419a808adcf9e5374f3c67fc401f2cddde38520531085651de8302b",
+        "samples": 311,
+        "before": 0.03572435677051544,
+        "after": 0.0264897421002388
+      }
+    ],
+    "amr_02": [
+      {
+        "version": 1,
+        "parent": "8b11ecffba635c11b261989a34801c74289c776da270cf96a72350f5a1033bb5",
+        "samples": 259,
+        "before": 0.12468131631612778,
+        "after": 0.037473972886800766
+      },
+      {
+        "version": 2,
+        "parent": "ae17ce6192cda1c8667d95edee177fcb3aee6774d7a08384be5d4cb1807c877c",
+        "samples": 259,
+        "before": 0.06049833074212074,
+        "after": 0.02743745595216751
+      },
+      {
+        "version": 3,
+        "parent": "77d26d6ee8082d393058e858aa22fc1391546735cf0004aed7f9707f515cb037",
+        "samples": 259,
+        "before": 0.036756034940481186,
+        "after": 0.025566119700670242
+      },
+      {
+        "version": 4,
+        "parent": "aa8a1b648419a808adcf9e5374f3c67fc401f2cddde38520531085651de8302b",
+        "samples": 312,
+        "before": 0.030594486743211746,
+        "after": 0.022175399586558342
+      }
+    ],
+    "amr_03": [
+      {
+        "version": 1,
+        "parent": "8b11ecffba635c11b261989a34801c74289c776da270cf96a72350f5a1033bb5",
+        "samples": 55,
+        "before": 0.1493210643529892,
+        "after": 0.03932306915521622
+      },
+      {
+        "version": 2,
+        "parent": "ae17ce6192cda1c8667d95edee177fcb3aee6774d7a08384be5d4cb1807c877c",
+        "samples": 55,
+        "before": 0.11373750865459442,
+        "after": 0.0320904478430748
+      },
+      {
+        "version": 3,
+        "parent": "77d26d6ee8082d393058e858aa22fc1391546735cf0004aed7f9707f515cb037",
+        "samples": 55,
+        "before": 0.07055182754993439,
+        "after": 0.02045566588640213
+      },
+      {
+        "version": 4,
+        "parent": "aa8a1b648419a808adcf9e5374f3c67fc401f2cddde38520531085651de8302b",
+        "samples": 107,
+        "before": 0.06317361444234848,
+        "after": 0.018265243619680405
+      }
+    ]
+  },
+  "shared_model_agreement": true,
+  "completed_fedavg_rounds": 4,
+  "holdout_samples": 157,
+  "holdout_mae": {
+    "gnn": [
+      0.092107429189342,
+      0.22001979545192893
+    ],
+    "no_neighbors": [
+      0.0806664680730512,
+      0.42758115016852216
+    ],
+    "training_mean": [
+      0.15961359576136644,
+      0.38886610922340425
+    ],
+    "kinematic": [
+      0.13625658483327113,
+      0.48349554140127377
+    ],
+    "local_only": [
+      0.03970433319243909,
+      0.10046152539401725
+    ],
+    "current_proximity": [
+      0.13625658483327113,
+      0.18899363057324844
+    ]
+  },
+  "remaining_time_mae_seconds": {
+    "gnn": 16.579337254081562,
+    "no_neighbors": 14.519964253149215,
+    "training_mean": 28.730447237045958,
+    "kinematic": 24.526185269988805,
+    "local_only": 7.146779974639036,
+    "current_proximity": 24.526185269988805
+  },
+  "proximity_exposure_mae": {
+    "gnn": 0.22001979545192893,
+    "no_neighbors": 0.42758115016852216,
+    "training_mean": 0.38886610922340425,
+    "kinematic": 0.48349554140127377,
+    "local_only": 0.10046152539401725,
+    "current_proximity": 0.18899363057324844
+  },
+  "per_robot_evaluation": {
+    "amr_01": {
+      "robot_id": "amr_01",
+      "task_id": "graph_1790144140293694551_amr_01",
+      "version": 3,
+      "digest": "aa8a1b648419a808adcf9e5374f3c67fc401f2cddde38520531085651de8302b",
+      "samples": 52,
+      "mae": {
+        "gnn": [
+          0.08522741324128504,
+          0.22661852558189283
+        ],
+        "no_neighbors": [
+          0.07810484071939419,
+          0.38444783786993764
+        ],
+        "training_mean": [
+          0.1967183183183183,
+          0.39101204466048967
+        ],
+        "kinematic": [
+          0.15562823005261472,
+          0.5708307692307691
+        ]
+      },
+      "remaining_time_mae_seconds": {
+        "gnn": 15.340934383431307,
+        "no_neighbors": 14.058871329490955,
+        "training_mean": 35.40929729729729,
+        "kinematic": 28.01308140947065
+      }
+    },
+    "amr_02": {
+      "robot_id": "amr_02",
+      "task_id": "graph_1790144140293694551_amr_02",
+      "version": 3,
+      "digest": "aa8a1b648419a808adcf9e5374f3c67fc401f2cddde38520531085651de8302b",
+      "samples": 53,
+      "mae": {
+        "gnn": [
+          0.09165567334366793,
+          0.16059405095866824
+        ],
+        "no_neighbors": [
+          0.101680704633045,
+          0.4693733073792368
+        ],
+        "training_mean": [
+          0.19911999546716525,
+          0.35899266051975826
+        ],
+        "kinematic": [
+          0.12895296675795992,
+          0.391577358490566
+        ]
+      },
+      "remaining_time_mae_seconds": {
+        "gnn": 16.49802120186023,
+        "no_neighbors": 18.3025268339481,
+        "training_mean": 35.841599184089745,
+        "kinematic": 23.211534016432786
+      }
+    },
+    "amr_03": {
+      "robot_id": "amr_03",
+      "task_id": "graph_1790144140293694551_amr_03",
+      "version": 3,
+      "digest": "aa8a1b648419a808adcf9e5374f3c67fc401f2cddde38520531085651de8302b",
+      "samples": 52,
+      "mae": {
+        "gnn": [
+          0.09944788859548985,
+          0.27398961259394233
+        ],
+        "no_neighbors": [
+          0.061809738932868355,
+          0.4281186099254168
+        ],
+        "training_mean": [
+          0.08224273504273505,
+          0.4171681118881119
+        ],
+        "kinematic": [
+          0.12432901188299472,
+          0.4898461538461538
+        ]
+      },
+      "remaining_time_mae_seconds": {
+        "gnn": 17.900619947188172,
+        "no_neighbors": 11.125753007916304,
+        "training_mean": 14.803692307692309,
+        "kinematic": 22.37922213893905
+      }
+    }
+  },
+  "graph_statistics": {
+    "amr_01": {
+      "snapshots": 67,
+      "edge_counts": [
+        4,
+        6
+      ],
+      "first_time": 0.112,
+      "last_time": 73.344
+    },
+    "amr_02": {
+      "snapshots": 67,
+      "edge_counts": [
+        4,
+        6
+      ],
+      "first_time": 0.112,
+      "last_time": 73.456
+    },
+    "amr_03": {
+      "snapshots": 66,
+      "edge_counts": [
+        4,
+        6
+      ],
+      "first_time": 0.16,
+      "last_time": 73.552
+    }
+  },
+  "limitations": [
+    "Fresh repeated C scenario, not an unseen-layout generalization test.",
+    "Three seed episodes and one holdout episode; temporal rows are correlated.",
+    "Risk is measured proximity exposure, not collision probability.",
+    "No matched randomized task-allocation experiment; no fleet-efficiency improvement claim.",
+    "No neighbor ablation is an inference-time sensitivity check, not a separately trained architecture.",
+    "Fourth round uses local holdout experience only after frozen third-round evaluation."
+  ],
+  "evidence_sha256": {
+    "Webots/edge_ai_runs/graph_1790144140293694551/baseline_comparison.json": "455274283956bba654f29ecfb14427cd6576972166d3b99656b968e28605b5e3",
+    "Webots/edge_ai_runs/graph_1790144140293694551/fleet.log": "bbb89911ed99feffc09f8dc1f6ea8c1c0f0d2bdc664d77cbceaeee19a44523d1",
+    "Webots/edge_ai_runs/graph_1790144140293694551/physical_result.json": "ce4da0355d021e4cd6ed5a80367ef97410fd99011b12e87349ec4384dc59706d",
+    "Webots/edge_ai_runs/graph_1790144140293694551/world.log": "189346f83dd9bc4bf90ca7e2e5b5eed7cad9aa6c7b10e05efab455bc35f09ce2",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/model_2.json": "e8ac91d0fc50828810cba9ed653c9cf016c491bf67de34b7476a9beffdf3d5fd",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/model_4.json": "8ce2f35694663cee2be354720a13593e24f3a88e5b75058ed4b60ed659162c61",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/model_3.json": "54e3b4794b2e2b839660b4a56c88e7b4070b6fcd9a9694eab882622cb475a229",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/status.jsonl": "a45f507f80458ac7cf851180402d08e71ca80122ff82eea9f6e40c79cceee02f",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/graphs.jsonl": "417b539ef8bcde19151bd3cbacabf67ee4cac55a1dc55fb1ad80c536361f8ad7",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/candidate.jsonl": "f81529ea4a472446deed0f2d0cf6b5966a575f06c75db053f661581692a1892e",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/evaluation.jsonl": "61040d944b158e3f2a9bc0546458d2a467de698f43521c652b402e0f9d059646",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/local_experience.jsonl": "3a2517f48aaa41c3bd18cab23d400b762af11c6a97af6b6f5611f5f19e7ef907",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/model_1.json": "775ce8d5cd5ea86a242a69d9a25c1abe7d2012a3c5cd69a44290514111e73216",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/training.jsonl": "e2b6ab37dcbddc4235ed63404c2d2f55e082c9a89b7a8efe518b3d6d01a05375",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_03/local_only_model.json": "afa373f05fafd5d51caaf1ed865e151587cb7d9e7df2bb3824986593dedd2bce",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/model_2.json": "e8ac91d0fc50828810cba9ed653c9cf016c491bf67de34b7476a9beffdf3d5fd",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/model_4.json": "8ce2f35694663cee2be354720a13593e24f3a88e5b75058ed4b60ed659162c61",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/model_3.json": "54e3b4794b2e2b839660b4a56c88e7b4070b6fcd9a9694eab882622cb475a229",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/status.jsonl": "570bd7da6e6e09f7b0e7cd6270ef8d4d174f485a27b119fa469f50e344919f18",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/graphs.jsonl": "fd09980a32eb6df53affd2b9771178d55abaa38c3cc06fda12ff98f291c44c76",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/candidate.jsonl": "1bdc4ae4c161381404d398077d394ec2c143dd9fd514f7f9deb931032a9accc1",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/evaluation.jsonl": "a0bfce7ea6434a6fb9e936ce5f60cda9a880b7a0338ecf67e8910bae14b3a264",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/local_experience.jsonl": "1b337b243084a678cd88129c3bf6b0fdc70550bf0da3de605ce1397606a11c9f",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/model_1.json": "775ce8d5cd5ea86a242a69d9a25c1abe7d2012a3c5cd69a44290514111e73216",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/training.jsonl": "a2cc6e871063da38f9553d2a425f30195fd963e3de56a46e4a1946e79a79f64e",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_01/local_only_model.json": "8d089815d2b1b1c265739b49a6429ddd1d7435386d29481a27b95ab3bb912df3",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/model_2.json": "e8ac91d0fc50828810cba9ed653c9cf016c491bf67de34b7476a9beffdf3d5fd",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/model_4.json": "8ce2f35694663cee2be354720a13593e24f3a88e5b75058ed4b60ed659162c61",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/model_3.json": "54e3b4794b2e2b839660b4a56c88e7b4070b6fcd9a9694eab882622cb475a229",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/status.jsonl": "a501ee43ffb9d65d660623d4743766fae7fdd5dd160c5778854eceeb110b825b",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/graphs.jsonl": "e1f4a847f82e4a29e6aaa58daffe01672eec5c10d53a0ccb15b8f82248585cc4",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/candidate.jsonl": "9c5c239d7201c2c88656ef121722d659800e5bc6e389bf4cb856ab2dfb0a8ea4",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/evaluation.jsonl": "3eff2453d0f6293358435fc2a20735bb72d787cfb37c14d539da24529495604c",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/local_experience.jsonl": "4084b2de90f15c6c9aa432f5ac0c9bdfccebeb94d7be90a0c0cb5e92d6cfa7f7",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/model_1.json": "775ce8d5cd5ea86a242a69d9a25c1abe7d2012a3c5cd69a44290514111e73216",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/training.jsonl": "16c187c2d17ca482b430b128c478eb57666d5e7ece7e14398963acc202da83ba",
+    "Webots/edge_ai_runs/graph_1790144140293694551/amr_02/local_only_model.json": "9dcfc54b5133692413d5b03813801c4d40778405bdca52b4cc7c19c2bcba78c1"
+  },
+  "model": {
+    "schema": "fleet_xy_velocity_goal_v1",
+    "architecture": "7 -> 12 embedding; edge-conditioned mean messages; 24 -> 12 -> 2 sigmoid",
+    "node_features": [
+      "x/20",
+      "y/16",
+      "vx/0.45",
+      "vy/0.45",
+      "speed/0.45",
+      "distance_to_goal/50",
+      "task_active"
+    ],
+    "edge_features": [
+      "distance/6",
+      "relative_speed/0.9",
+      "closing_speed/0.9"
+    ],
+    "edge_rule": "Directed pair distance <= 6 m, no self edges"
+  },
+  "cost": {
+    "parameters": 614,
+    "float32_parameter_bytes": 2456,
+    "json_checkpoint_bytes": 13287,
+    "inference_mean_ms": 0.8418964103717977,
+    "inference_p95_ms": 1.8875792913604532,
+    "inference_calls": 300,
+    "inference_scope": "CPU graph tensor preparation + all-node forward + ego extraction; warmed",
+    "torch_version": "2.14.0+cpu",
+    "python_version": "3.12.3",
+    "cpu_threads": 1,
+    "training_measurement": "Three concurrent DDS peers in seed-only replay",
+    "local_training_seconds": {
+      "amr_01": {
+        "1": 13.004245184012689,
+        "2": 0.7213637460081372,
+        "3": 0.7126283120014705
+      },
+      "amr_02": {
+        "1": 12.890721018979093,
+        "2": 0.7352851030009333,
+        "3": 0.7456840880040545
+      },
+      "amr_03": {
+        "1": 12.606999423005618,
+        "2": 0.659514418017352,
+        "3": 0.5442344690090977
+      }
+    }
+  },
+  "evaluation": {
+    "samples": 157,
+    "fleet": {
+      "full_graph": {
+        "remaining_time_mae_s": 16.57933725408156,
+        "remaining_time_rmse_s": 21.577106979071193,
+        "exposure_mae": 0.22001979545192896,
+        "exposure_rmse": 0.26850147173702377
+      },
+      "no_neighbors": {
+        "remaining_time_mae_s": 14.519964253149215,
+        "remaining_time_rmse_s": 17.432670255999547,
+        "exposure_mae": 0.42758115016852216,
+        "exposure_rmse": 0.5034533801528053
+      },
+      "local_only": {
+        "remaining_time_mae_s": 7.146779974639035,
+        "remaining_time_rmse_s": 10.033994523603242,
+        "exposure_mae": 0.10046152539401725,
+        "exposure_rmse": 0.1439518596249144
+      },
+      "simple": {
+        "remaining_time_mae_s": 24.526185269988805,
+        "remaining_time_rmse_s": 28.618632493539774,
+        "exposure_mae": 0.18899363057324844,
+        "exposure_rmse": 0.34482212528950634
+      }
+    },
+    "per_robot": {
+      "amr_01": {
+        "samples": 52,
+        "models": {
+          "full_graph": {
+            "remaining_time_mae_s": 15.340934383431303,
+            "remaining_time_rmse_s": 19.608731431690533,
+            "exposure_mae": 0.2266185255818928,
+            "exposure_rmse": 0.27137326593027017
+          },
+          "no_neighbors": {
+            "remaining_time_mae_s": 14.058871329490955,
+            "remaining_time_rmse_s": 16.83851025525696,
+            "exposure_mae": 0.38444783786993764,
+            "exposure_rmse": 0.456001389764825
+          },
+          "local_only": {
+            "remaining_time_mae_s": 5.3154669459055235,
+            "remaining_time_rmse_s": 7.373656290171073,
+            "exposure_mae": 0.15234491894763819,
+            "exposure_rmse": 0.19717599275172396
+          },
+          "simple": {
+            "remaining_time_mae_s": 28.013081409470654,
+            "remaining_time_rmse_s": 31.836321529013688,
+            "exposure_mae": 0.2015692307692308,
+            "exposure_rmse": 0.3531662498031204
+          }
+        }
+      },
+      "amr_02": {
+        "samples": 53,
+        "models": {
+          "full_graph": {
+            "remaining_time_mae_s": 16.498021201860226,
+            "remaining_time_rmse_s": 22.183606920115547,
+            "exposure_mae": 0.16059405095866827,
+            "exposure_rmse": 0.187327428618167
+          },
+          "no_neighbors": {
+            "remaining_time_mae_s": 18.3025268339481,
+            "remaining_time_rmse_s": 21.305877766213666,
+            "exposure_mae": 0.4693733073792368,
+            "exposure_rmse": 0.5379532513096354
+          },
+          "local_only": {
+            "remaining_time_mae_s": 10.537496076775044,
+            "remaining_time_rmse_s": 13.86960974491629,
+            "exposure_mae": 0.12530086570868512,
+            "exposure_rmse": 0.14860836226407748
+          },
+          "simple": {
+            "remaining_time_mae_s": 23.211534016432786,
+            "remaining_time_rmse_s": 26.87895058739055,
+            "exposure_mae": 0.2157584905660378,
+            "exposure_rmse": 0.37164911022640096
+          }
+        }
+      },
+      "amr_03": {
+        "samples": 52,
+        "models": {
+          "full_graph": {
+            "remaining_time_mae_s": 17.900619947188172,
+            "remaining_time_rmse_s": 22.794505282164756,
+            "exposure_mae": 0.27398961259394233,
+            "exposure_rmse": 0.3290222983686672
+          },
+          "no_neighbors": {
+            "remaining_time_mae_s": 11.125753007916305,
+            "remaining_time_rmse_s": 13.089411381460566,
+            "exposure_mae": 0.42811860992541684,
+            "exposure_rmse": 0.5122245789048688
+          },
+          "local_only": {
+            "remaining_time_mae_s": 5.522170822349306,
+            "remaining_time_rmse_s": 7.317313927570469,
+            "exposure_mae": 0.023261111904292513,
+            "exposure_rmse": 0.03431323353855364
+          },
+          "simple": {
+            "remaining_time_mae_s": 22.37922213893905,
+            "remaining_time_rmse_s": 26.886906092823402,
+            "exposure_mae": 0.14913846153846155,
+            "exposure_rmse": 0.3057577522760839
+          }
+        }
+      }
+    }
+  },
+  "physical_coordination": {
+    "goals_completed": 3,
+    "goals_required": 3,
+    "contacts": 0,
+    "permanent_deadlocks": 0,
+    "makespan_sim_s": 58.592,
+    "minimum_physical_separation_m": 1.864835922474483,
+    "conflicts": 3,
+    "pibt_resolutions": 5,
+    "lacam_activations": 0,
+    "battery_note": "Controller's simulated percentage depletion; not measured electrical energy or Wh.",
+    "robots": {
+      "amr_01": {
+        "completed": true,
+        "completion_time_sim_s": 58.592,
+        "completion_time_wall_s": 281.47863906400744,
+        "path_length_m": 3.864898667982724,
+        "average_speed_m_per_sim_s": 0.06596290735907162,
+        "final_position": [
+          3.8648696985982793,
+          -9.99999999866643
+        ],
+        "battery_depletion_percentage_points": 5.699999999998866,
+        "conflicts": 3,
+        "replans": 0,
+        "pibt_resolutions": 5,
+        "lacam_activations": 0,
+        "deadlocks": 0,
+        "waiting_time": 44.4,
+        "steps": 5,
+        "inheritances": 0,
+        "backtracks": 0
+      },
+      "amr_02": {
+        "completed": true,
+        "completion_time_sim_s": 58.528000000000006,
+        "completion_time_wall_s": 281.63022228798945,
+        "path_length_m": 7.4781745071864,
+        "average_speed_m_per_sim_s": 0.12777088756127664,
+        "final_position": [
+          2.0004531564900363,
+          -8.137524960682487
+        ],
+        "battery_depletion_percentage_points": 5.700000000000728,
+        "conflicts": 3,
+        "replans": 1,
+        "pibt_resolutions": 5,
+        "lacam_activations": 0,
+        "deadlocks": 0,
+        "waiting_time": 17.823999999999995,
+        "steps": 5,
+        "inheritances": 0,
+        "backtracks": 0
+      },
+      "amr_03": {
+        "completed": true,
+        "completion_time_sim_s": 58.528000000000006,
+        "completion_time_wall_s": 282.12479608898866,
+        "path_length_m": 7.6045672299474125,
+        "average_speed_m_per_sim_s": 0.1299304133055531,
+        "final_position": [
+          0.001347323383539345,
+          -10.136045167352421
+        ],
+        "battery_depletion_percentage_points": 5.700000000000891,
+        "conflicts": 3,
+        "replans": 1,
+        "pibt_resolutions": 5,
+        "lacam_activations": 0,
+        "deadlocks": 0,
+        "waiting_time": 20.703999999999997,
+        "steps": 5,
+        "inheritances": 0,
+        "backtracks": 0
+      }
+    }
+  },
+  "physical_ai_bidding": {
+    "completed": true,
+    "winner": "amr_01",
+    "contacts": 0,
+    "bids": {
+      "amr_02": {
+        "deterministic_score": 0.7429061838171738,
+        "predicted_remaining_time_s": 28.289435505867004,
+        "predicted_exposure": 0.6343139410018921,
+        "ai_adjustment": -0.0042887794971465665,
+        "final_bid": 0.7386174043200272,
+        "transmitted_rounded_bid": 0.7386
+      },
+      "amr_03": {
+        "deterministic_score": 0.6262926294206378,
+        "predicted_remaining_time_s": 23.481618762016296,
+        "predicted_exposure": 0.39332661032676697,
+        "ai_adjustment": 0.009897394478321053,
+        "final_bid": 0.6361900238989588,
+        "transmitted_rounded_bid": 0.6362
+      },
+      "amr_01": {
+        "deterministic_score": 0.8729137422818514,
+        "predicted_remaining_time_s": 18.822942227125168,
+        "predicted_exposure": 0.3837823271751404,
+        "ai_adjustment": 0.01244513154029847,
+        "final_bid": 0.8853588738221498,
+        "transmitted_rounded_bid": 0.8854
+      }
+    },
+    "completion_time_sim_s": 9.664000000000001,
+    "completion_time_wall_s": 36.04366277100053,
+    "physical_displacement_m": 2.93862183188776,
+    "final_position": [
+      6.803491530486039,
+      -10.0000000010397
+    ],
+    "final_task_status": "COMPLETED",
+    "last_telemetry_state": "MOVING_TO_GOAL",
+    "telemetry_note": "Last telemetry preceded completion; no post-completion IDLE sample was retained in this run.",
+    "independent_winner_agreement": {
+      "amr_03": {
+        "robot_id": "amr_03",
+        "task_id": "graph_1790144140293694551_ADVISED",
+        "winner": "amr_01"
+      },
+      "amr_01": {
+        "robot_id": "amr_01",
+        "task_id": "graph_1790144140293694551_ADVISED",
+        "winner": "amr_01"
+      },
+      "amr_02": {
+        "robot_id": "amr_02",
+        "task_id": "graph_1790144140293694551_ADVISED",
+        "winner": "amr_01"
+      }
+    }
+  },
+  "failsafe": {
+    "status": "PASS",
+    "controlled_failure": "No graph learner/inference processes launched",
+    "run": "failsafe_1790163213691340072",
+    "task": {
+      "task_id": "failsafe_1790163213691340072",
+      "kind": "navigate",
+      "pickup_x": 12.0,
+      "pickup_y": -10.0
+    },
+    "result": {
+      "task_id": "failsafe_1790163213691340072",
+      "robot_id": "amr_01",
+      "status": "COMPLETED",
+      "duration": 18.971476535021793,
+      "distance": 3.6007941293561565,
+      "reroutes": 0,
+      "obstacles": 0,
+      "carry_verified": false,
+      "energy": 0.3799999999999244
+    },
+    "winner": "amr_01",
+    "initial": {
+      "time": 3.072,
+      "poses": {
+        "amr_01": [
+          15.8,
+          -9.99999999016842,
+          -0.00015671747836837335
+        ],
+        "amr_02": [
+          15.8,
+          -5.999999990168423,
+          -0.00015671747836831784
+        ],
+        "amr_03": [
+          15.8,
+          -1.9999999901684276,
+          -0.00015671747836831784
+        ]
+      },
+      "minimum_separation": 3.999999999999995,
+      "collision_episodes": 0,
+      "nonfloor_contacts": {
+        "amr_01": [],
+        "amr_02": [],
+        "amr_03": []
+      }
+    },
+    "final": {
+      "time": 15.808,
+      "poses": {
+        "amr_01": [
+          12.200881213334586,
+          -9.999999998040897,
+          -0.00015671326239791172
+        ],
+        "amr_02": [
+          15.8,
+          -5.999999990168423,
+          -0.00015671747836831784
+        ],
+        "amr_03": [
+          15.8,
+          -1.9999999901684276,
+          -0.0001567174783683456
+        ]
+      },
+      "minimum_separation": 3.999999999999995,
+      "collision_episodes": 0,
+      "nonfloor_contacts": {
+        "amr_01": [],
+        "amr_02": [],
+        "amr_03": []
+      }
+    },
+    "audits": {
+      "amr_02": {
+        "event": "AI_FAILURE",
+        "robot_id": "amr_02",
+        "task_id": "failsafe_1790163213691340072",
+        "deterministic": 0.7568648552000945,
+        "final": 0.7568648552000945,
+        "advice": {}
+      },
+      "amr_01": {
+        "event": "AI_FAILURE",
+        "robot_id": "amr_01",
+        "task_id": "failsafe_1790163213691340072",
+        "deterministic": 0.8748019943237304,
+        "final": 0.8748019943237304,
+        "advice": {}
+      },
+      "amr_03": {
+        "event": "AI_FAILURE",
+        "robot_id": "amr_03",
+        "task_id": "failsafe_1790163213691340072",
+        "deterministic": 0.5983800991427677,
+        "final": 0.5983800991427677,
+        "advice": {}
+      }
+    },
+    "bids": {
+      "amr_02": {
+        "task_id": "failsafe_1790163213691340072",
+        "robot_id": "amr_02",
+        "bid": 0.7569,
+        "battery": 64.93,
+        "available": true,
+        "x": 15.8,
+        "y": -6.0,
+        "timestamp": 1790163259.6399152
+      },
+      "amr_01": {
+        "task_id": "failsafe_1790163213691340072",
+        "robot_id": "amr_01",
+        "bid": 0.8748,
+        "battery": 89.93,
+        "available": true,
+        "x": 15.8,
+        "y": -10.0,
+        "timestamp": 1790163259.6577556
+      },
+      "amr_03": {
+        "task_id": "failsafe_1790163213691340072",
+        "robot_id": "amr_03",
+        "bid": 0.5984,
+        "battery": 39.93,
+        "available": true,
+        "x": 15.8,
+        "y": -2.0,
+        "timestamp": 1790163259.6893947
+      }
+    },
+    "decisions": {
+      "amr_02": {
+        "robot_id": "amr_02",
+        "task_id": "failsafe_1790163213691340072",
+        "winner": "amr_01"
+      },
+      "amr_03": {
+        "robot_id": "amr_03",
+        "task_id": "failsafe_1790163213691340072",
+        "winner": "amr_01"
+      },
+      "amr_01": {
+        "robot_id": "amr_01",
+        "task_id": "failsafe_1790163213691340072",
+        "winner": "amr_01"
+      }
+    },
+    "contacts": 0,
+    "final_robot_state": "IDLE",
+    "completion_time_sim_seconds": 12.736
+  },
+  "frozen_prediction_evidence": "Webots/edge_ai_runs/graph_1790144140293694551/frozen_predictions.csv",
+  "prediction_timing": "Version-3 model applied to recorded causal live features at task completion, before adding any run samples to training; not stored online before outcomes.",
+  "graph_ablation_delta_full_minus_no_neighbor": {
+    "remaining_time_mae_s": 2.059373000932343,
+    "remaining_time_rmse_s": 4.144436723071646,
+    "exposure_mae": -0.2075613547165932,
+    "exposure_rmse": -0.2349519084157815
+  },
+  "fedavg_numerical_verification": [
+    {
+      "round": 1,
+      "sample_counts": {
+        "amr_03": 55,
+        "amr_02": 259,
+        "amr_01": 259
+      },
+      "max_absolute_parameter_difference": 2.9750311325571488e-08,
+      "replay_vs_original_physical_run_parameter_difference": 0.0,
+      "update_payload_bytes": {
+        "amr_03": 13483,
+        "amr_02": 13483,
+        "amr_01": 13524
+      },
+      "total_update_payload_bytes": 40490,
+      "aggregation_mean_ms": 10.82212633433907,
+      "aggregation_p95_ms": 13.662083454255463
+    },
+    {
+      "round": 2,
+      "sample_counts": {
+        "amr_03": 55,
+        "amr_01": 259,
+        "amr_02": 259
+      },
+      "max_absolute_parameter_difference": 4.587373192421751e-08,
+      "replay_vs_original_physical_run_parameter_difference": 0.0,
+      "update_payload_bytes": {
+        "amr_03": 13485,
+        "amr_01": 13446,
+        "amr_02": 13469
+      },
+      "total_update_payload_bytes": 40400,
+      "aggregation_mean_ms": 5.913202130856614,
+      "aggregation_p95_ms": 7.916126440977678
+    },
+    {
+      "round": 3,
+      "sample_counts": {
+        "amr_03": 55,
+        "amr_01": 259,
+        "amr_02": 259
+      },
+      "max_absolute_parameter_difference": 5.10748352500201e-08,
+      "replay_vs_original_physical_run_parameter_difference": 0.0,
+      "update_payload_bytes": {
+        "amr_03": 13436,
+        "amr_01": 13457,
+        "amr_02": 13459
+      },
+      "total_update_payload_bytes": 40352,
+      "aggregation_mean_ms": 3.870436333818361,
+      "aggregation_p95_ms": 4.714558259001932
+    }
+  ],
+  "fourth_round_reconstruction": {
+    "round": 4,
+    "source": "Offline deterministic reconstruction, not original DDS capture",
+    "max_absolute_parameter_difference": 5.6828538097519754e-08,
+    "sample_counts": {
+      "amr_01": 311,
+      "amr_02": 312,
+      "amr_03": 107
+    },
+    "reconstructed_update_payload_bytes": {
+      "amr_01": 13444,
+      "amr_02": 13444,
+      "amr_03": 13433
+    },
+    "total_reconstructed_payload_bytes": 40321,
+    "reconstruction_training": {
+      "amr_01": {
+        "samples": 311,
+        "before": 0.03572435677051544,
+        "after": 0.0264897421002388,
+        "duration_seconds": 7.89632322898251
+      },
+      "amr_02": {
+        "samples": 312,
+        "before": 0.030594486743211746,
+        "after": 0.022175399586558342,
+        "duration_seconds": 0.5239398879930377
+      },
+      "amr_03": {
+        "samples": 107,
+        "before": 0.06317361444234848,
+        "after": 0.018265243619680405,
+        "duration_seconds": 0.8105887580022682
+      }
+    }
+  },
+  "unit_tests": {
+    "passed": 46,
+    "original_regressions": 38,
+    "log": "Webots/edge_ai_runs/regressions.log"
+  },
+  "failed_attempts": [
+    {
+      "run": "graph_1790143611155110696",
+      "phase": "startup task acceptance",
+      "reason": "Stale localization rejected assignments; no movement or contact",
+      "resolution": "Fresh-pose test-harness gate and retry of unacknowledged assignments"
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "scope": "final_accepted_runs",
+  "historical_failures": [
+    {
+      "run": "initial_independent_execution",
+      "physical_contact_episodes": 1,
+      "evidence_file": "Webots/logs/failed_independent_execution_physics.jsonl"
+    },
+    {
+      "run": "first_C_readiness",
+      "physical_contact_episodes": 0,
+      "status": "TASK_REJECTED",
+      "evidence_file": "Webots/logs/failed_C_readiness_result.json"
+    }
+  ],
+  "coordinate_frame": "webots_world",
+  "time_basis": "simulation_seconds",
+  "definitions": {
+    "completion_time": "Session task completion including reservation barriers",
+    "waiting_time": "Time with movement authorization withheld, including waits after own goal arrival",
+    "average_fleet_speed": "Arithmetic mean of per-robot path length / completion time",
+    "fleet_event_counts": "Unique joint step/conflict episodes; peer invocation totals are separate",
+    "no_progress_steps": "Steps between the last two visits to the held joint configuration",
+    "contacts": "Non-floor contact episodes above z=0.04 m; evaluated every 16 ms physics step",
+    "goal_tolerance_m": 0.25
+  },
+  "tests": {
+    "A": {
+      "status": "PASS",
+      "robots": {
+        "amr_01": {
+          "start_position_m": [
+            8.597196762635698e-21,
+            -10.000000032983353
+          ],
+          "goal_position_m": [
+            4,
+            -10
+          ],
+          "final_position_m": [
+            3.864556391286512,
+            -10.00000000069576
+          ],
+          "completion_time_s": 41.104000000000006,
+          "path_length_m": 3.864584810883565,
+          "average_speed_m_per_s": 0.09401967718186952,
+          "waiting_time_s": 26.576,
+          "replans": 0,
+          "final_state": "COMPLETED",
+          "goal_completed": true,
+          "conflicts_detected": 1,
+          "pibt_resolutions": 4,
+          "lacam_activations": 0,
+          "deadlock_detections": 0,
+          "route_efficiency": 0.9999928951512161
+        },
+        "amr_02": {
+          "start_position_m": [
+            2.000000032983351,
+            -12.0
+          ],
+          "goal_position_m": [
+            2,
+            -8
+          ],
+          "final_position_m": [
+            2.0003664954335467,
+            -8.13447628855936
+          ],
+          "completion_time_s": 41.104000000000006,
+          "path_length_m": 7.490555145288703,
+          "average_speed_m_per_s": 0.18223421431706652,
+          "waiting_time_s": 0.17600000000000016,
+          "replans": 1,
+          "final_state": "COMPLETED",
+          "goal_completed": true,
+          "conflicts_detected": 1,
+          "pibt_resolutions": 4,
+          "lacam_activations": 0,
+          "deadlock_detections": 0,
+          "route_efficiency": 0.5245879669763975
+        }
+      },
+      "fleet": {
+        "makespan_s": 41.104000000000006,
+        "total_distance_m": 11.355139956172268,
+        "average_fleet_speed_m_per_s": 0.13812694574946802,
+        "distance_throughput_m_per_s": 0.27625389149893603,
+        "total_waiting_time_s": 26.752000000000002,
+        "conflicts_detected": 1,
+        "pibt_resolutions": 4,
+        "lacam_activations": 0,
+        "lacam_agent_invocations": 0,
+        "deadlock_detections": 0,
+        "deadlock_agent_detections": 0,
+        "minimum_physical_separation_m": 1.8644802391555952,
+        "physical_contact_episodes": 0,
+        "completed_goals": 2,
+        "total_goals": 2,
+        "permanent_deadlocks": 0
+      },
+      "deadlock_evidence": [],
+      "lacam_physical_verification": {
+        "activated": false,
+        "physically_validated": false,
+        "reservation_agreement_verified": true,
+        "executed_joint_steps": 0
+      },
+      "evidence_file": "Webots/logs/coordination_A_result.json"
+    },
+    "B": {
+      "status": "PASS",
+      "robots": {
+        "amr_01": {
+          "start_position_m": [
+            5.000000011320032,
+            -6.0
+          ],
+          "goal_position_m": [
+            5,
+            -2
+          ],
+          "final_position_m": [
+            5.000544233321358,
+            -2.1363898709978257
+          ],
+          "completion_time_s": 173.00799999999998,
+          "path_length_m": 18.0051933174248,
+          "average_speed_m_per_s": 0.10407144939785908,
+          "waiting_time_s": 59.248,
+          "replans": 5,
+          "final_state": "COMPLETED",
+          "goal_completed": true,
+          "conflicts_detected": 1,
+          "pibt_resolutions": 4,
+          "lacam_activations": 1,
+          "deadlock_detections": 1,
+          "route_efficiency": 0.22048790996054154
+        },
+        "amr_02": {
+          "start_position_m": [
+            4.999999988679969,
+            -2.0
+          ],
+          "goal_position_m": [
+            5,
+            -8
+          ],
+          "final_position_m": [
+            4.999736887315126,
+            -7.863166999342307
+          ],
+          "completion_time_s": 173.00799999999998,
+          "path_length_m": 12.808945539687935,
+          "average_speed_m_per_s": 0.07403672396471803,
+          "waiting_time_s": 98.67199999999998,
+          "replans": 3,
+          "final_state": "COMPLETED",
+          "goal_completed": true,
+          "conflicts_detected": 1,
+          "pibt_resolutions": 4,
+          "lacam_activations": 1,
+          "deadlock_detections": 1,
+          "route_efficiency": 0.46347153738636593
+        }
+      },
+      "fleet": {
+        "makespan_s": 173.00799999999998,
+        "total_distance_m": 30.814138857112738,
+        "average_fleet_speed_m_per_s": 0.08905408668128856,
+        "distance_throughput_m_per_s": 0.17810817336257712,
+        "total_waiting_time_s": 157.92,
+        "conflicts_detected": 1,
+        "pibt_resolutions": 4,
+        "lacam_activations": 1,
+        "lacam_agent_invocations": 2,
+        "deadlock_detections": 1,
+        "deadlock_agent_detections": 2,
+        "minimum_physical_separation_m": 1.8596212353788575,
+        "physical_contact_episodes": 0,
+        "completed_goals": 2,
+        "total_goals": 2,
+        "permanent_deadlocks": 0
+      },
+      "deadlock_evidence": [
+        {
+          "robot_id": "amr_01",
+          "reason": "repeated_joint_configuration",
+          "robots": [
+            "amr_01",
+            "amr_02"
+          ],
+          "simulation_time_s": 80.48,
+          "bounded_no_progress_window_s": 8.048000000000002,
+          "repeated_states": [
+            {
+              "configuration": [
+                1,
+                2
+              ],
+              "visits": 2
+            },
+            {
+              "configuration": [
+                0,
+                1
+              ],
+              "visits": 2
+            }
+          ],
+          "no_progress_steps": 2,
+          "runtime_reason": "Repeated configuration and no safe PIBT successor",
+          "source_sequence": 5
+        },
+        {
+          "robot_id": "amr_02",
+          "reason": "repeated_joint_configuration",
+          "robots": [
+            "amr_01",
+            "amr_02"
+          ],
+          "simulation_time_s": 80.48,
+          "bounded_no_progress_window_s": 8.048000000000002,
+          "repeated_states": [
+            {
+              "configuration": [
+                1,
+                2
+              ],
+              "visits": 2
+            },
+            {
+              "configuration": [
+                0,
+                1
+              ],
+              "visits": 2
+            }
+          ],
+          "no_progress_steps": 2,
+          "runtime_reason": "Repeated configuration and no safe PIBT successor",
+          "source_sequence": 5
+        }
+      ],
+      "lacam_physical_verification": {
+        "activated": true,
+        "physically_validated": true,
+        "reservation_agreement_verified": true,
+        "executed_joint_steps": 7,
+        "maximum_measured_arrival_error_m": 0.13875583231490715,
+        "physical_distance_after_activation_m": {
+          "amr_01": 10.946527371795513,
+          "amr_02": 7.467434147995296
+        }
+      },
+      "evidence_file": "Webots/logs/coordination_B_result.json"
+    },
+    "C": {
+      "status": "PASS",
+      "robots": {
+        "amr_01": {
+          "start_position_m": [
+            4.189067515562507e-21,
+            -10.000000032983353
+          ],
+          "goal_position_m": [
+            4,
+            -10
+          ],
+          "final_position_m": [
+            3.8634493146202167,
+            -10.000000000581839
+          ],
+          "completion_time_s": 59.28,
+          "path_length_m": 3.8634770678083643,
+          "average_speed_m_per_s": 0.0651733648415716,
+          "waiting_time_s": 44.768,
+          "replans": 0,
+          "final_state": "COMPLETED",
+          "goal_completed": true,
+          "conflicts_detected": 3,
+          "pibt_resolutions": 5,
+          "lacam_activations": 0,
+          "deadlock_detections": 0,
+          "route_efficiency": 0.9999930617511027
+        },
+        "amr_02": {
+          "start_position_m": [
+            2.000000032983351,
+            -12.0
+          ],
+          "goal_position_m": [
+            2,
+            -8
+          ],
+          "final_position_m": [
+            2.0004152539531455,
+            -8.137432374618921
+          ],
+          "completion_time_s": 59.28,
+          "path_length_m": 7.4805498435784346,
+          "average_speed_m_per_s": 0.12619011207116118,
+          "waiting_time_s": 17.616000000000007,
+          "replans": 1,
+          "final_state": "COMPLETED",
+          "goal_completed": true,
+          "conflicts_detected": 3,
+          "pibt_resolutions": 5,
+          "lacam_activations": 0,
+          "deadlock_detections": 0,
+          "route_efficiency": 0.5250733798041796
+        },
+        "amr_03": {
+          "start_position_m": [
+            4.0,
+            -9.999999967016647
+          ],
+          "goal_position_m": [
+            0,
+            -10
+          ],
+          "final_position_m": [
+            0.0016500636717371518,
+            -10.136921972258422
+          ],
+          "completion_time_s": 59.28,
+          "path_length_m": 7.609013994125073,
+          "average_speed_m_per_s": 0.1283571861357131,
+          "waiting_time_s": 21.424,
+          "replans": 1,
+          "final_state": "COMPLETED",
+          "goal_completed": true,
+          "conflicts_detected": 3,
+          "pibt_resolutions": 5,
+          "lacam_activations": 0,
+          "deadlock_detections": 0,
+          "route_efficiency": 0.516399165086794
+        }
+      },
+      "fleet": {
+        "makespan_s": 59.28,
+        "total_distance_m": 18.953040905511873,
+        "average_fleet_speed_m_per_s": 0.10657355434948196,
+        "distance_throughput_m_per_s": 0.3197206630484459,
+        "total_waiting_time_s": 83.808,
+        "conflicts_detected": 3,
+        "pibt_resolutions": 5,
+        "lacam_activations": 0,
+        "lacam_agent_invocations": 0,
+        "deadlock_detections": 0,
+        "deadlock_agent_detections": 0,
+        "minimum_physical_separation_m": 1.8633693572321999,
+        "physical_contact_episodes": 0,
+        "completed_goals": 3,
+        "total_goals": 3,
+        "permanent_deadlocks": 0
+      },
+      "deadlock_evidence": [],
+      "lacam_physical_verification": {
+        "activated": false,
+        "physically_validated": false,
+        "reservation_agreement_verified": true,
+        "executed_joint_steps": 0
+      },
+      "evidence_file": "Webots/logs/coordination_C_result.json"
+    }
+  }
+}
